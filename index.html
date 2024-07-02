@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con Fondo Pac-Man</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    <header class="header">       
-        <img src="./images/pac-man-logo.png" alt="Pac-Man Logo" class="header-logo">
-        <span><h1>Bienvenido a mi página con fondo de Pac-Man</h1></span>
-        <img src="./images/pac-man-logo-png-transparent.png" alt="Pac-Man Logo Transparent" class="header-logo">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Pacman</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="contheader">
+        <div id="contlogo">
+          <img id="logoheader" src="img/logo.png" alt="logoheader" />
+        </div>
+        <div id="conttexto">
+          <img id="logoTexto" src="img/logotexto.png" alt="logoTexto" />
+        </div>
+      </div>
+      <div id="contcontador"><div id="contador">0 PTS</div></div>
     </header>
-
-    <audio id="pacman-audio" src="./mp3/Pacman-Game-Start-Sound.mp3" autoplay></audio>
-    <div class="container">
-        <img src="./images/pacman-icon.png" alt="Pac-Man Logo" class="logo">
-        <img src="./images/fantasmito.png" alt="Fantasmita" class="fantasmita" id="fantasmito">
+    <div id="main">
+      <div id="contenedorPacman">
+        <div><img src="img/pacman.png" id="logoPacman" alt="logoPacman" /></div>
+        <div>
+          <img src="img/fantasmito.png" id="fantasmito" alt="fantasmito" />
+        </div>
+        <div><img src="img/cherry.png" id="cherry" alt="cherry" /></div>
+        <div id="gameover">GAME OVER</div>
+      </div>
     </div>
-    <script src="./scripts/script.js"></script>
-</body>
+
+    <audio id="intro" src="/audio/Intro.mp3" autoplay></audio>
+
+    <script src="/js/app.js"></script>
+  </body>
 </html>
